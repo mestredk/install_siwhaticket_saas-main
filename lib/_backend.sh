@@ -165,6 +165,7 @@ backend_db_migrate() {
   sudo su - deploy <<EOF
   cd /home/deploy/${instancia_add}/backend
   npx sequelize db:migrate
+  npx sequelize db:migrate
 EOF
 
   sleep 2
